@@ -1,4 +1,4 @@
-from sqlite3 import Connections as SQLite3Conneciton
+from sqlite3 import Connection as SQLite3Connection
 from datetime import datetime
 from sqlalchemy import event
 from sqlalchemy.engine import Engine
