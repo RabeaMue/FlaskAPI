@@ -10,7 +10,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite://sqllitedb.file"
-app.config["SQL_TRACK_MODIFICATIONS"] = 0
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = 0
 
 # configure sqlite3 to enforce foreign key contraints
 @event.listens_for(Engine, "connect")
